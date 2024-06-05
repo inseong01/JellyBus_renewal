@@ -65,12 +65,22 @@ top_btn.addEventListener('click', function() {
 })
 
 // language-btn
-lang_icon.addEventListener('mouseenter', function() { // 호버 인
-  lang_menu.classList.add('active');
+const $body = document.querySelector('body');
+$body.addEventListener('click', function(e) {
+  const $language = e.target.parentNode.classList.value.includes('icon');
+  if ($language) {
+    lang_menu.classList.toggle('active');
+  } else {
+    lang_menu.classList.remove('active');
+  }
+  // console.log(e.target.parentNode.classList.value.includes('icon'))
 });
-lang.addEventListener('mouseleave', function() { // 호버 아웃
-  lang_menu.classList.remove('active');
-});
+// lang_icon.addEventListener('click', function() { // 호버 인
+//   lang_menu.classList.toggle('active');
+// });
+// lang.addEventListener('mouseleave', function() { // 호버 아웃
+//   lang_menu.classList.remove('active');
+// });
 
 function changeLanguage(language) { // textContent 삽입
   switch(language) {
