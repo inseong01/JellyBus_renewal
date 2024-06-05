@@ -1,6 +1,5 @@
-const lang_icon = document.querySelector('.language-btn .icon');
-const lang_menu = document.querySelector('.language-btn .lang');
-const lang = document.querySelector('.language-btn');
+const lang_menu = document.querySelector('.language-list');
+const lang_btn = document.querySelector('.language-btn');
 const lang_txt = document.querySelectorAll('.lang .txt a');
 
 const title1_1 = document.querySelector('.lang_1');
@@ -32,10 +31,12 @@ window.addEventListener('scroll', () => {
     header.classList.add('active');
     menu_list.classList.remove('clicked');
     menu_btn.classList.remove('clicked');
+    lang_menu.classList.remove('active');
   } else {
     header.classList.remove('active');
     menu_list.classList.remove('clicked');
     menu_btn.classList.remove('clicked');
+    lang_menu.classList.remove('active');
   }
   currentY = scrollTop;
 
@@ -49,10 +50,10 @@ window.addEventListener('scroll', () => {
   // 스크롤 내리면 나타남
   if (scrollTop > 200) {
     top_btn.classList.add('active');    
-    lang.classList.add('active');    
+    lang_btn.classList.add('active');    
   } else {
     top_btn.classList.remove('active');    
-    lang.classList.remove('active');    
+    lang_btn.classList.remove('active');    
   }
 })
 // top-btn
@@ -65,12 +66,10 @@ top_btn.addEventListener('click', function() {
 })
 
 // language-btn
-lang_icon.addEventListener('mouseenter', function() { // 호버 인
-  lang_menu.classList.add('active');
+lang_btn.addEventListener('click', function() {
+  lang_menu.classList.toggle('active');
 });
-lang.addEventListener('mouseleave', function() { // 호버 아웃
-  lang_menu.classList.remove('active');
-});
+
 
 function changeLanguage(language) { // textContent 삽입
   switch(language) {
@@ -114,6 +113,7 @@ function changeLanguage(language) { // textContent 삽입
 }
 lang_txt.forEach(value => { // data-language
   value.addEventListener('click', function() {
+    if (!lang_menu.classList.contains('active')) return;
     value.classList.add('checked');
     lang_txt.forEach(siblings => {
       if (this !== siblings) {
@@ -122,7 +122,7 @@ lang_txt.forEach(value => { // data-language
     })
 
     const language = value.getAttribute('data-language');
-    changeLanguage(language);
+    changeLanguage(language);  
   });
 });
 
