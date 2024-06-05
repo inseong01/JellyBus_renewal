@@ -230,7 +230,6 @@ body.bg {
     border-radius: 50%;
 }
 .lang {
-    width: 40px;
     height: 100px;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 1);
@@ -1092,10 +1091,6 @@ footer .b_text-wrap .r_text {
     .sec_1 .second_title .title {
         text-align: center;
         position: static;
-        word-break: keep-all;
-    }
-    .sec_1 .second_title .title {
-        position: static;
         font-size: 14px;
     }
     .sec_1 .second_title .lang_1:after {
@@ -1297,6 +1292,17 @@ footer .b_text-wrap .r_text {
         height: 25px;
         left: 20px;
         bottom: 20px;
+    }
+    .language-list {
+        left: 20px;
+        bottom: 55px;
+    }
+    .lang {
+        height: 70px;
+    }
+    .lang .txt{
+        width: 25px;
+        font-size: 11px;
     }
 }
 
