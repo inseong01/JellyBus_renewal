@@ -67,13 +67,12 @@ top_btn.addEventListener('click', function() {
 // language-btn
 const $body = document.querySelector('body');
 $body.addEventListener('click', function(e) {
-  const $language = e.target.parentNode.classList.value.includes('icon');
+  const $language = e.target.parentNode.classList.value.includes('l-icon');
   if ($language) {
     lang_menu.classList.toggle('active');
   } else {
     lang_menu.classList.remove('active');
   }
-  // console.log(e.target.parentNode.classList.value.includes('icon'))
 });
 // lang_icon.addEventListener('click', function() { // 호버 인
 //   lang_menu.classList.toggle('active');
