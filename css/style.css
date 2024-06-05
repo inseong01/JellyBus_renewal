@@ -44,7 +44,7 @@
     height: 100vh;
     background-color: white;
     border-left: 2px solid #b3b3b3;
-    padding: 200px 24px;
+    padding: 70px 24px 270px;
 
     display: flex;
     flex-direction: column;
@@ -583,7 +583,7 @@ body.bg {
     margin-right: 20px;
     transition: 0.5s;
     flex: 1;
-    border: 1px solid #b3b3b3;
+    /* border: 1px solid #b3b3b3; */
 }
 .sec_2 .item-list:nth-child(2) .item {
     margin-right: 0;
@@ -924,12 +924,15 @@ footer .b_text-wrap .r_text {
 /* ---------------------- */
 /* 반응형 */
 @media (max-width: 1500px) {
+    header {
+        /* height: auto; */
+        padding: 8px 24px;
+    }
     .sec_1 {
         padding: 0px 0 100px 0;
     }
     .header .menu-list-wrap {
         width: 100%;
-        padding: 0 24px;
     }
     .footer-wrap {
         width: 100%;
@@ -1046,12 +1049,8 @@ footer .b_text-wrap .r_text {
         display: none;
     }
 }
-
+@media (hover: hover) {}
 @media (max-width: 885px) {
-    .list-wrap {
-        padding: 350px 24px;
-    }
-
     .banner .video-box .caption {
         width: 330px;
         font-size: 42px;
@@ -1282,6 +1281,9 @@ footer .b_text-wrap .r_text {
     }
 
     .top-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
         right: 20px;
         bottom: 20px;
     }
@@ -1289,19 +1291,53 @@ footer .b_text-wrap .r_text {
         left: 20px;
         bottom: 20px;
     }
+    .language-btn .list {
+        height: 125px;
+    }
+    .lang {
+        width: 30px;
+        height: 90px;
+    }
+    .lang .txt {
+        font-size: 12px;
+    }
+    .language-btn .list .icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 500px) {
     .accent {
         font-size: 40px;
     }
+    .list-wrap {
+        padding: 50px 24px 250px;
+    }
+    .header {
+        height: auto;
+    }
+    .header .menu-logo {
+        width: 70px;
+        height: auto;
+    }
+    .header .list-span {
+        width: 17px;
+        height: 10px;
+    }
 
     .sec_1 .third_title .title2 {
         font-size: 40px;
     }
+    .sec_1 .item_wrap .item {
+        width: 100%;
+    }
 
     .sec_2 .headtitle {
         font-size: 35px;
+    }
+    .sec_2 .item-list .item {
+        width: 100%;
     }
 
     .sec_3 .l_title .tile_t {
@@ -1332,9 +1368,12 @@ footer .b_text-wrap .r_text {
     .sec_3 .bottom .l_wrap .title1 {
         font-size: 25px;
     }
+    .sec_3 .bottom .r_wrap {
+        width: 100%;
+    }
 
     .list-wrap .list a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     footer .b_text-wrap {
         display: none;
