@@ -1298,17 +1298,6 @@ footer .b_text-wrap .r_text {
         left: 20px;
         bottom: 20px;
     }
-    .language-list {
-        left: 20px;
-        bottom: 55px;
-    }
-    .lang {
-        width: 25px;
-        height: 80px;
-    }
-    .lang .txt {
-        font-size: 10px;
-    }
 }
 
 @media (max-width: 500px) {
