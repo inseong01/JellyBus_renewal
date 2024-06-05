@@ -289,11 +289,7 @@ body.bg {
 .top-btn.active {
     opacity: 1;
 }
-.top-btn:hover {
-    background-color: #B5E48C;
-    color: white;
-    border: 1px solid #B5E48C;
-}
+
 
 /* ---------------------- */
 /* banner */
@@ -924,6 +920,17 @@ footer .b_text-wrap .r_text {
 /* ---------------------- */
 /* 반응형 */
 @media (max-width: 1500px) {
+    .list-wrap .list,
+    .install-box-wrap .box,
+    .header .menu-list .list,
+    .sec_2 .item-list .item,
+    .sec_3 .bottom .content-wrap .l_ct,
+    .sec_3 .bottom .content-wrap .l_ct,
+    footer .t_text-wrap .r_text .box,
+    footer .b_text-wrap .r_text .text {
+        pointer-events: none;
+    }
+
     header {
         /* height: auto; */
         padding: 8px 24px;
@@ -1049,8 +1056,11 @@ footer .b_text-wrap .r_text {
         display: none;
     }
 }
-@media (hover: hover) {}
+
 @media (max-width: 885px) {
+
+
+
     .banner .video-box .caption {
         width: 330px;
         font-size: 42px;
