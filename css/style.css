@@ -1322,6 +1322,9 @@ footer .b_text-wrap .r_text {
         display: flex;
         justify-content: space-evenly;
     }
+    .install-box-wrap .box {
+        width: calc(50% - 10px);
+    }
 
     .sec_3 .bottom {
         margin-top: 140px;
