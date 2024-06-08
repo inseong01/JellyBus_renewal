@@ -5,6 +5,6 @@ https://inseong01.github.io/JellyBus_renewal/
 ## 리뉴얼 전후
   좌측: 전, 우측: 후
   <p width="100%" align="center">
-    <img src="./img/renewal reference.png" width="49%" height="100%" align="left"  alt="JellyBus"></img>
-    <img src="./img/preview.png" width="49%" height="100%" align="right"  alt="JellyBus_renewal"></img>
+    <img src="./img/renewal reference.png" width="45%" height="100%" align="left"  alt="JellyBus"></img>
+    <img src="./img/preview.png" width="45%" height="100%" align="right"  alt="JellyBus_renewal"></img>
   </p>
